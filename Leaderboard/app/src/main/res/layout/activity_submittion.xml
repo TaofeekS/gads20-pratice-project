@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".submittion" >
+
+    <ImageView
+        android:id="@+id/black_background_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foreground="@drawable/backgroundblack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/backgroundblack" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <ImageView
+        android:id="@+id/iconView"
+        android:layout_width="97dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="@+id/black_background_view"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/tittleView"
+        android:layout_width="99dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Google Africa"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/iconView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tittleView2"
+        android:layout_width="148dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Developer Scholarship"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/iconView"
+        app:layout_constraintTop_toBottomOf="@+id/tittleView" />
+
+    <TextView
+        android:id="@+id/introView"
+        android:layout_width="197dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#FFFFFF"
+        android:outlineProvider="none"
+        android:soundEffectsEnabled="false"
+        android:text="Project Submission"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4A108"
+        android:textColorHighlight="#C3A845"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introView"
+        app:srcCompat="@drawable/gradient_line" />
+
+    <EditText
+        android:id="@+id/firstNameView"
+        android:layout_width="210dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/text_view_round"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/lastNameView"
+        android:layout_width="211dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/text_view_round"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/firstNameView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/emailView"
+        android:layout_width="392dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/text_view_round"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameView" />
+
+    <EditText
+        android:id="@+id/githubView"
+        android:layout_width="387dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/text_view_round"
+        android:ems="10"
+        android:hint="Project on Github(Link)"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailView" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_round2"
+        android:elevation="4dp"
+        android:fadingEdge="horizontal|vertical"
+        android:fadingEdgeLength="4dp"
+        android:requiresFadingEdge="horizontal|vertical"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/black_background_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/githubView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
